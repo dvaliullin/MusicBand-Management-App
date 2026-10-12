@@ -1,7 +1,7 @@
 .idea
 .mvn
-client/target
-server/target
-common/target
+client/target/
+server/target/
+common/target/
 .iml
 client/client.iml
