@@ -1,0 +1,37 @@
+services:
+  # Сервис СУБД PostgreSQL
+  db:
+    image: postgres:15-alpine
+    container_name: musicband_db
+    environment:
+      POSTGRES_DB: lab7
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ItMoVtP3131
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+  # Сервис нашего сервера приложений
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: musicband_server
+    ports:
+      - "8888:8888"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8888
+      DB_HOST: pg
+      DB_NAME: lab7
+      DB_URL: jdbc:postgresql://db:5432/lab7
+      DB_USER: postgres
+      DB_PASSWORD: ItMoVtP3131
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  pgdata:

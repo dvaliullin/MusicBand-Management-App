@@ -1,0 +1,10 @@
+1,1,Band1,31,45,5,POP,Label1,10
+2,2,Band2,22,33,4,POST_ROCK,Label2,8
+3,3,Band3,45,55,6,POP,Label3,9
+4,4,Band4,20,30,,POST_ROCK,Label4,10
+5,5,Band5,40,3,78,,Label5,15
+6,6,Band6,10,20,1,POP,,14
+7,7,Band9,8,9,77,POP,Label8,44
+10,8,Band8,6,5,7,POP,Label7,88
+11,9,Band10,7,7,8,POP,Label9,99
+66,10,ert,45,34,4,,,54
