@@ -1,5 +1,4 @@
 services:
-  # Сервис СУБД PostgreSQL
   db:
     image: postgres:15-alpine
     container_name: musicband_db
@@ -13,7 +12,6 @@ services:
       - pgdata:/var/lib/postgresql/data
     restart: always
 
-  # Сервис нашего сервера приложений
   server:
     build:
       context: .
