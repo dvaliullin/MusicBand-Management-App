@@ -82,7 +82,7 @@
 ### Вариант 2. Локальный запуск
 
 1. **Убедитесь, что установлена PostgreSQL**:
-   Создайте базу данных `musicband_db` ([скрипт](musicband.sql)) или настройте параметры под существующую базу.
+   Создайте базу данных `musicband_db` ([скрипт](https://github.com/dvaliullin/MusicBand-Management-App/blob/3c3b08dc3d948b8eb26d7a3a70337300cf36f687/musicband_db.sql)) или настройте параметры под существующую базу.
 
 2. **Соберите проект через Maven**:
    ```bash
